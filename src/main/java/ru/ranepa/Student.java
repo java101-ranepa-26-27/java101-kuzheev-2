@@ -21,15 +21,22 @@ public class Student {
         }
 
         double SRS = marks.isEmpty() ? 0 : (double) kolvo / marks.size();
-         String SRS_status = "Никто";
-         if (SRS < 2.5);
+        String SRS_status;
+        if (SRS < 2.5) {
+            SRS_status = "Двоечник";
+        } else if (SRS >= 2.5) {
+            SRS_status = "Троечник";
+        } else if (SRS >= 3.5) {
+            SRS_status = "Хорошист";
+        } else {
+            SRS_status = "Отличник";
+        }
         System.out.println(name);
         for (int mark : marks) {
-            System.out.print(mark + " ");
+        System.out.print(mark + " ");
         }
-        System.out.println();
         System.out.println(SRS);
-
+        System.out.println(SRS_status);
         scanner.close();
     }
 }
