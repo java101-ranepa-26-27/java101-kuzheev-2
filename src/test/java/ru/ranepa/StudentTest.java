@@ -9,6 +9,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
 import java.nio.charset.StandardCharsets;
+
+import com.sun.tools.javac.Main;
 import org.junit.jupiter.api.Test;
 
 /**
